@@ -1,0 +1,29 @@
+{% extends 'base.html'%}
+{% block page_content%}
+{% if source %}
+    <h1>{{source}}</h1>
+{%else%}
+    <h1>No news items found</h1>
+{% endif%}
+    <div class="row">
+        {% for article in articles %}
+            <div class="col-lg-6 my-3">
+                <div class="card mb-3">
+                  <div class="row no-gutters">
+                    <div class="col-md-6">
+                      <img src="{{article.image_url}}" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body">
+                        <!--<h5 class="card-title">Card title</h5>-->
+                        <p class="card-text">{{article.title}}</p>
+                        <span class="card-text"><small class="text-muted">{{moment(article.date_published).fromNow()}}</small></span>
+                        <a href="{{article.article_url}}" class="btn btn-sm btn-primary mx-3">Read</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        {% endfor%}
+    </div>
+{% endblock page_content%}

@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Lobster|Saira+Stencil+One&display=swap');
+.navbar-brand{
+    font-family: 'Lobster', cursive;
+     font-size: 30px;
+}
+
+h1{
+   font-family: 'Fredoka One', cursive;
+   text-decoration:underline;
+}
+.spinner{
+    font-family: 'Saira Stencil One', cursive;
+    font-size:80px;
+}
+#zero{
+    font-family: 'Saira Stencil One', cursive !important;
+}

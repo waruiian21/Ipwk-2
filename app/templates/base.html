@@ -1,0 +1,39 @@
+{%extends 'bootstrap/base.html'%}
+
+{%block title%}
+    {%if title%}
+        News App - {{title}}
+    {%else%}
+        News app
+    {%endif%}
+{%endblock title%}
+
+{% block styles%}
+    {{super()}}
+    <link rel="stylesheet" href="{{url_for('static',filename='custom.css')}}">
+{% endblock styles%}
+
+{% block scripts%}
+{{ super() }}
+<script src="https://kit.fontawesome.com/8be6e48d00.js" crossorigin="anonymous"></script>
+{{ moment.include_moment() }}
+{% endblock scripts%}
+{% block navbar%}
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <span class="navbar-brand">The news hub</span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="{{url_for('main.index')}}">Home <span class="sr-only">(current)</span></a>
+        </div>
+      </div>
+    </nav>
+{% endblock %}
+{%block content%}
+    <div class="container">
+        {%block page_content%}
+        {%endblock page_content%}
+    </div>
+{%endblock content%}
