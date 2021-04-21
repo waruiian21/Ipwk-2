@@ -3,20 +3,21 @@
 #### By Ian Warui
 news_hub is a python flask app that uses the news-api to displays current trending news form various sources
 
-## Setup/Installation
-* Clone this repository and navigate into that directory.
-* Install all dependencies in requirements.txt
-
-    ```bash
-        pip install -r requirements.txt
-    ```
-* Run python manage.py in terminal to run the app.
-
+On your terminal run
+~ git clone https://github.com/waruiian21/Ipwk-2
+~  code .
+### Set up the virtual environment
+~ python -m venv <name of virtual environment>
+~ source <name of virtual environment>/bin/activate
+    
+### Install flask 
+   ~ python3 -m pip install flask
+   ~ python3 -m install flask-bootstrap
+   ~ python3 -m install flask-script
+   
 ## Technologies Used
 + Python 3.6
 + Flask
-+ Flask_Bootstrap4 - for bootstrap version 4
++ Bootstrap
 + Heroku 
 
-## 
-  
