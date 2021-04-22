@@ -3,7 +3,7 @@
 #### By Ian Warui .
 news_hub is a python flask app that uses the news-api to displays current trending news form various sources .
 
-## Setup/Installation
+## Setup/Installation .
 * Clone this repository and navigate into that directory.
 * Install all dependencies in requirements.txt
 
