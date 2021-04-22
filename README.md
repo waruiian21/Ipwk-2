@@ -10,7 +10,7 @@ news_hub is a python flask app that uses the news-api to displays current trendi
     ```bash
         pip install -r requirements.txt
     ```
-* Run python manage.py in terminal to run the app
+* Run python manage.py in terminal to run the app .
 
 ## Technologies Used
 + Python 3.7
