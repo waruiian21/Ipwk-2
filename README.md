@@ -16,7 +16,7 @@ news_hub is a python flask app that uses the news-api to displays current trendi
 + Python  .
 + Flask .
 + Flask_Bootstrap4 - for bootstrap version 4 .
-+ Heroku 
++ Heroku .
 
 ## Known Bugs
   NO KNOWN BUG
